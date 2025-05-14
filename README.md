@@ -54,33 +54,24 @@ The `ImageEditor` page and the `getImageInfo` query have been removed for this e
 
 ### Requirements
 
-1. **Image Preview**:
+1. **Display a preview of the image**:
 
-   - Display a preview of the image with the ability to handle loading and error states.
-   - Use the `createImageUrl` utility to generate the image URL.
+   - Display a preview of the image
 
 2. **Image Controls**:
 
-   - Allow users to adjust the image dimensions (width and height) with an option to lock the aspect ratio.
-   - Provide controls for applying grayscale and blur effects.
+   - Allow users to adjust the image dimensions, apply greyscale and blur effects
 
-3. **Real-Time Updates**:
+3. **Download Functionality**:
 
-   - Update the preview in real-time as users adjust the controls.
+   - Enable users to download the modified image
 
-4. **Download Functionality**:
+4. **Shareable links**:
 
-   - Enable users to download the modified image using the `useLazyDownloadImageQuery` hook.
+   - Allow users to share links that maintain the edited image state (dimensions, effects).
 
-5. **State Management**:
-
-   - Use URL-based state management for the editor settings (e.g., dimensions, effects) to allow shareable URLs.
-
-6. **API Query**:
-   - Implement the `getImageInfo` query in `src/services/picsum/api/endpoints.ts` to fetch metadata for a specific image. This query should:
-     - Accept an `imageId` as input.
-     - Fetch the image metadata from the `/id/{imageId}/info` endpoint.
-     - Parse and validate the response using the `ImageSchema` from `zod`.
+5. **API Query**:
+   - Implement a `getImageInfo` query to fetch metadata for a specific image.
 
 ### Helpful Context
 
