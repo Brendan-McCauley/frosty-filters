@@ -89,7 +89,9 @@ The `ImageEditor` page and the `getImageInfo` query have been removed for this e
 
 ### Design Reference
 
-A `design.jpg` file is included in the root of the project, which provides a reference for the UI design of the `ImageEditor` page. While you are encouraged to follow this design, we welcome any changes or optimizations you think would improve the user experience or functionality.
+A `design.jpg` file is included in the project, which provides a reference for the UI design of the `ImageEditor` page. While you are encouraged to follow this design, we welcome any changes or optimizations you think would improve the user experience or functionality.
+
+![Design Reference](./public/design.jpg)
 
 ### Review Existing Code
 
